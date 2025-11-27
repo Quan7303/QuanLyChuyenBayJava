@@ -51,7 +51,8 @@ public class TimChuyenBayFRM extends JFrame {
     private JButton btnTimCB, btnBack;
     private JComboBox<String> cbxSanBayDi, cbxSanBayDen;
     private JDateChooser jDateChooser1, jDateChooser2;
-    private JLabel lblDiemKhoiHanh, lblXinChao, lblSuaThongTin, lblDangXuat, lblDiemDen, lblAnhDiemDen, lblAnhDiemKhoiHanh, lblNgayDi, lblNguoiLon, lblTreEm, lbl12Tuoi, lbl11Tuoi, lblNgayVe, lblName;
+    private JLabel lblDiemKhoiHanh, lblXinChao, lblSuaThongTin, lblDangXuat, lblDiemDen, lblAnhDiemDen,
+            lblAnhDiemKhoiHanh, lblNgayDi, lblNguoiLon, lblTreEm, lbl12Tuoi, lbl11Tuoi, lblNgayVe, lblName;
     private JPanel pnThongTin, pnB, pnB1, pnT, pnN, pnN1, pnN2;
     private JRadioButton rbtnKhuHoi, rbtnMotChieu;
     private JSpinner jSpinner1, jSpinner2;
@@ -92,8 +93,9 @@ public class TimChuyenBayFRM extends JFrame {
         setSize(600, 650);
         setLayout(new BorderLayout());
         getContentPane().setBackground(new Color(245, 247, 250));
-        
 
+
+        
         btnG1 = new ButtonGroup();
         rbtnKhuHoi = new JRadioButton();
         rbtnMotChieu = new JRadioButton();
@@ -317,9 +319,9 @@ public class TimChuyenBayFRM extends JFrame {
         gbc.gridy = 10;
         pnT.add(lbl11Tuoi, gbc);
 
-//        gbc.gridx = 0;
-//        gbc.gridy = 11;
-//        pnT.add(lblBaoLoi, gbc);
+        // gbc.gridx = 0;
+        // gbc.gridy = 11;
+        // pnT.add(lblBaoLoi, gbc);
         add(pnT, BorderLayout.CENTER);
 
         pnN = new JPanel(new GridLayout(2, 1));
@@ -332,7 +334,7 @@ public class TimChuyenBayFRM extends JFrame {
         pnN.add(pnN1);
         pnN.add(pnN2);
         add(pnN, BorderLayout.SOUTH);
-        //pack();
+        // pack();
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
