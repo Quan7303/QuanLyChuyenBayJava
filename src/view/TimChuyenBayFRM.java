@@ -92,6 +92,7 @@ public class TimChuyenBayFRM extends JFrame {
         setSize(600, 650);
         setLayout(new BorderLayout());
         getContentPane().setBackground(new Color(245, 247, 250));
+        
 
         btnG1 = new ButtonGroup();
         rbtnKhuHoi = new JRadioButton();
