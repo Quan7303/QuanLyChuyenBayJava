@@ -37,7 +37,7 @@ create table maybay(
 create table nhanvien(
 	sdt varchar(12) not null,
     tennhanvien varchar(50) not null,
-    tendangnhap varchar(50) not null,
+    tendangnhap varchar(30) not null,
     luong int not null,
 	primary key (sdt)
 );

@@ -33,6 +33,25 @@ public class DataConnection {
         }
     }
     
+//    public static void createStatement() {
+//        String url = "jdbc:sqlserver://QuânGia\\SQLEXPRESS:1433;databaseName=qlmb";
+//
+//        String user = "sa";
+//        String pass = "18";
+//        try {
+//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//            connection = DriverManager.getConnection(url, user, pass);
+//            statement = connection.createStatement();
+//
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE,
+//                    null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE,
+//                    null, ex);
+//        }
+//    }
+    
     public static ResultSet retrieveData(String sql){
         try{
             createStatement();
