@@ -21,10 +21,7 @@ import model.SanBay;
 import model.TaiKhoan;
 import model.Ve;
 
-/**
- *
- * @author LENOVO
- */
+
 public class LoadData {
 
     public static void loadTableTaiKhoan() {

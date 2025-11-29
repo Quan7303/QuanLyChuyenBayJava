@@ -6,10 +6,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.*;
-/**
- *
- * @author conghau
- */
+
 public class InsertData {
      public static void insertTaiKhoan(TaiKhoan taiKhoan) {
         String sqlCommand = "insert into TAIKHOAN values(?,?,?)";

@@ -10,10 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.*;
 
-/**
- *
- * @author PC
- */
+
 public class UpdateData {
 
     public static boolean updateSanBay(SanBay sanBay) {
