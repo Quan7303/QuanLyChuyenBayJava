@@ -194,9 +194,6 @@ public class DSVeFRM extends JFrame {
         pnT.setBackground(new Color(245, 247, 250));
         jScrollPane2.setViewportView(pnListGhe);
         jScrollPane2.setPreferredSize(new Dimension(900, 800));
-        jScrollPane2.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(230, 230, 230), 1),
-                javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10)));
         jScrollPane2.setBackground(Color.WHITE);
 
         Font labelFont = new Font("Segoe UI", Font.BOLD, 13);
@@ -247,13 +244,6 @@ public class DSVeFRM extends JFrame {
 
         txtTenKH.setFont(plainFont);
         txtSDT.setFont(plainFont);
-        txtTenKH.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(200, 200, 200), 1),
-                javax.swing.BorderFactory.createEmptyBorder(5, 8, 5, 8)));
-        txtSDT.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(200, 200, 200), 1),
-                javax.swing.BorderFactory.createEmptyBorder(5, 8, 5, 8)));
-
         lblMaGhe.setFont(new Font("Segoe UI", Font.BOLD, 14));
         lblMaGhe.setForeground(new Color(0, 120, 215));
         btnBack.addActionListener(new ActionListener() {
@@ -300,9 +290,6 @@ public class DSVeFRM extends JFrame {
 
         pnChuThich.setBackground(Color.WHITE);
         pnChuThich.setLayout(new GridLayout(3, 2, 10, 15));
-        pnChuThich.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(230, 230, 230), 1),
-                javax.swing.BorderFactory.createEmptyBorder(15, 15, 15, 15)));
         pnChuThich.add(btnTrang);
         pnChuThich.add(lblConTrong);
         pnChuThich.add(btnXanh);

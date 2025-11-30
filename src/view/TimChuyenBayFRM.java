@@ -90,7 +90,6 @@ public class TimChuyenBayFRM extends JFrame {
     private void initComponents() {
 
         setTitle("TÌM CHUYẾN BAY");
-        setSize(600, 650);
         setLayout(new BorderLayout());
         getContentPane().setBackground(new Color(245, 247, 250));
 
@@ -218,11 +217,9 @@ public class TimChuyenBayFRM extends JFrame {
 
         pnB = new JPanel(new GridLayout(1, 2, 100, 10));
         pnB.setBackground(new Color(245, 247, 250));
-        pnB.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         pnThongTin.setLayout(new GridLayout(2, 2, 10, 10));
         pnThongTin.setBackground(new Color(245, 247, 250));
-        pnThongTin.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         pnThongTin.add(lblXinChao);
         pnThongTin.add(lblName);
         pnThongTin.add(lblSuaThongTin);
@@ -230,7 +227,6 @@ public class TimChuyenBayFRM extends JFrame {
 
         pnB1 = new JPanel(new BorderLayout());
         pnB1.setBackground(new Color(245, 247, 250));
-        pnB1.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         pnB1.add(btnBack, BorderLayout.WEST);
         pnB.add(pnB1);
         pnB.add(pnThongTin);
@@ -238,9 +234,7 @@ public class TimChuyenBayFRM extends JFrame {
 
         pnT = new JPanel(new GridBagLayout());
         pnT.setBackground(Color.WHITE);
-        pnT.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(230, 230, 230), 1),
-                javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20)));
+
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(8, 10, 8, 10);
@@ -319,9 +313,6 @@ public class TimChuyenBayFRM extends JFrame {
         gbc.gridy = 10;
         pnT.add(lbl11Tuoi, gbc);
 
-        // gbc.gridx = 0;
-        // gbc.gridy = 11;
-        // pnT.add(lblBaoLoi, gbc);
         add(pnT, BorderLayout.CENTER);
 
         pnN = new JPanel(new GridLayout(2, 1));
@@ -334,7 +325,7 @@ public class TimChuyenBayFRM extends JFrame {
         pnN.add(pnN1);
         pnN.add(pnN2);
         add(pnN, BorderLayout.SOUTH);
-        // pack();
+        pack();
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -345,7 +336,7 @@ public class TimChuyenBayFRM extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jDateChooser2.setEnabled(true);
-                // lblDiemKhoiHanh.setText(jDateChooser1.getDate().toString());
+                //lblDiemKhoiHanh.setText(jDateChooser1.getDate().toString());
             }
 
         });

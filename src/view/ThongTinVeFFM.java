@@ -114,15 +114,6 @@ public class ThongTinVeFFM extends JFrame {
         btnXacNhan.setFocusPainted(false);
         btnXacNhan.setBorderPainted(false);
         btnXacNhan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnXacNhan.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnXacNhan.setBackground(new Color(0, 102, 204));
-            }
-
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnXacNhan.setBackground(new Color(0, 120, 215));
-            }
-        });
 
         lblMaGhe.setFont(new Font("Segoe UI", Font.BOLD, 14));
         lblMaGhe.setForeground(new Color(0, 120, 215));
@@ -131,12 +122,6 @@ public class ThongTinVeFFM extends JFrame {
 
         txtHoTen.setFont(plainFont);
         txtSDT.setFont(plainFont);
-        txtHoTen.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(200, 200, 200), 1),
-                javax.swing.BorderFactory.createEmptyBorder(8, 10, 8, 10)));
-        txtSDT.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(200, 200, 200), 1),
-                javax.swing.BorderFactory.createEmptyBorder(8, 10, 8, 10)));
 
         btnXacNhan.addActionListener(new ActionListener() {
             @Override
@@ -187,9 +172,6 @@ public class ThongTinVeFFM extends JFrame {
 
         pnT = new JPanel(new BorderLayout());
         pnT.setBackground(Color.WHITE);
-        pnT.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(230, 230, 230), 1),
-                javax.swing.BorderFactory.createEmptyBorder(25, 25, 25, 25)));
 
         pnT1 = new JPanel(new GridLayout(3, 1));
         pnT2 = new JPanel(new GridLayout(3, 1));
@@ -215,7 +197,7 @@ public class ThongTinVeFFM extends JFrame {
         add(pnB, BorderLayout.NORTH);
         add(pnT, BorderLayout.CENTER);
         add(pnN, BorderLayout.SOUTH);
-        // pack();
+        //pack();
     }
 
     public static void main(String[] args) {

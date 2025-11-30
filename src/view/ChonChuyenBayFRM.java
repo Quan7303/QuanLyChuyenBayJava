@@ -89,9 +89,6 @@ public class ChonChuyenBayFRM extends JFrame {
         tbl.setBackground(Color.WHITE);
 
         jScrollPane3.setViewportView(tbl);
-        jScrollPane3.setBorder(javax.swing.BorderFactory.createCompoundBorder(
-                javax.swing.BorderFactory.createLineBorder(new Color(230, 230, 230), 1),
-                javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10)));
         jScrollPane3.setBackground(Color.WHITE);
 
         lblTitle.setText("CHỌN CHUYẾN BAY");
