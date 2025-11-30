@@ -262,16 +262,18 @@ public class SanBayFRM extends JFrame {
                     return;
                 }
                 txtMaSB.setText(txtMaSB.getText().toUpperCase());
+
                 SanBay sb = new SanBay(txtMaSB.getText(), txtName.getText(), txtDiaDiem.getText());
                 if (row == -1) {
-                    connection.InsertData.insertSanBay(sb);
-                    showData();
                     for (SanBay sbb : controller.Controller.arrayListSanBay) {
                         if (sbb.getMaSanBay().equals(txtMaSB.getText())) {
                             baoLoi.setText("Mã Sân Bay Không Hợp Lệ");
                             return;
                         }
                     }
+                    connection.InsertData.insertSanBay(sb);
+                    showData();
+
                     baoLoi.setText("");
                     txtMaSB.setEnabled(false);
                     txtName.setEnabled(false);
