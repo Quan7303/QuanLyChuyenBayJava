@@ -207,6 +207,37 @@ insert into taikhoan values
 ('guest_student', '123', 'guest'),
 ('admin_main', 'admin', 'admin'), 
 ('staff_checkin', '123', 'staff');
+
+INSERT INTO ve (mcb, tenhanhkhach, sdt, soghe) VALUES 
+('HAN-SGN-001', 'Le Van Khu', '0912345678', 10), 
+('SGN-HAN-003', 'Le Van Khu', '0912345678', 10),
+('HAN-SGN-001', 'Tran Thi Hoi', '0987654321', 11),
+('SGN-HAN-003', 'Tran Thi Hoi', '0987654321', 11),
+('SGN-DLI-001', 'Nguyen Van A', '0901111111', 5),
+('SGN-DLI-001', 'Nguyen Van B', '0901111112', 6),
+('SGN-DLI-001', 'Nguyen Van C', '0901111113', 7),
+('SGN-DLI-001', 'Nguyen Van D', '0901111114', 8),
+('SGN-DLI-001', 'Nguyen Van E', '0901111115', 9),
+('TET-SGN-HAN-2', 'Hoang Thuy Linh', '0902222221', 1),
+('TET-SGN-HAN-2', 'Den Vau', '0902222222', 2),
+('TET-SGN-HAN-2', 'Son Tung MTP', '0902222223', 3),
+('TET-SGN-HAN-2', 'Jack 5 Cu', '0902222224', 4),
+('TET-SGN-HAN-2', 'Hieuthuhai', '0902222225', 5),
+('TET-SGN-HAN-2', 'Mono', '0902222226', 6),
+('TET-SGN-HAN-2', 'Toc Tien', '0902222227', 15),
+('TET-SGN-HAN-2', 'Binz', '0902222228', 16),
+('TET-SGN-HAN-2', 'Rhymastic', '0902222229', 17),
+('TET-SGN-HAN-2', 'Justatee', '0902222230', 18),
+('SGN-VCS-001', 'Khach Vip 1', '0999999991', 1),
+('SGN-VCS-001', 'Khach Vip 2', '0999999992', 2),
+('SGN-VCS-001', 'Khach Vip 3', '0999999993', 3),
+('SGN-VCS-001', 'Khach Vip 4', '0999999994', 4),
+('SGN-VCS-001', 'Ba Tan Vlog', '0988888888', 20),
+('SGN-VCS-001', 'Quynh Tran JP', '0977777777', 21),
+('HAN-SGN-002', 'CEO Nguyen', '0911000000', 1),
+('HAN-SGN-002', 'Giam Doc Le', '0911000001', 2),
+('HAN-SGN-002', 'Thu Ky Tran', '0911000002', 3);
+
 alter table chuyenbay
 add foreign key (duongbay) references duongbay(maduongbay); 
 
