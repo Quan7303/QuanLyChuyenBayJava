@@ -19,38 +19,38 @@ public class DataConnection {
     public static Connection connection;
     public static Statement statement;
     
-    public static void createStatement(){
-        String url = "jdbc:mysql://localhost:3306/qlmb?autoReconnect=true&useSSL=false";
-        String username = "root";
-        String password ="0867755047ha";
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection=DriverManager.getConnection(url,username,password);
-            statement = connection.createStatement();
-        }catch(SQLException | ClassNotFoundException ex){
-            Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE,
-                    null, ex);
-        }
-    }
-    
-//    public static void createStatement() {
-//        String url = "jdbc:sqlserver://QuânGia\\SQLEXPRESS:1433;databaseName=qlmb";
-//
-//        String user = "sa";
-//        String pass = "18";
-//        try {
-//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-//            connection = DriverManager.getConnection(url, user, pass);
+//    public static void createStatement(){
+//        String url = "jdbc:mysql://localhost:3306/qlmb?autoReconnect=true&useSSL=false";
+//        String username = "root";
+//        String password ="0867755047ha";
+//        try{
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//            connection=DriverManager.getConnection(url,username,password);
 //            statement = connection.createStatement();
-//
-//        } catch (ClassNotFoundException ex) {
-//            Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE,
-//                    null, ex);
-//        } catch (SQLException ex) {
+//        }catch(SQLException | ClassNotFoundException ex){
 //            Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE,
 //                    null, ex);
 //        }
 //    }
+    
+    public static void createStatement() {
+        String url = "jdbc:sqlserver://QuânGia\\SQLEXPRESS:1433;databaseName=qlmb";
+
+        String user = "sa";
+        String pass = "18";
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            connection = DriverManager.getConnection(url, user, pass);
+            statement = connection.createStatement();
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE,
+                    null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE,
+                    null, ex);
+        }
+    }
     
     public static ResultSet retrieveData(String sql){
         try{

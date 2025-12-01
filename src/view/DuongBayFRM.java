@@ -296,6 +296,7 @@ public class DuongBayFRM extends JFrame {
                         } else {
 
                             connection.InsertData.insertDuongBay(db);
+                            showData();
                             jComboBox1.setEnabled(false);
                             jComboBox2.setEnabled(false);
                             txt5.setEnabled(false);
