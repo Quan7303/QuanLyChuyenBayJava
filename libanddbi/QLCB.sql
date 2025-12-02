@@ -139,13 +139,7 @@ insert into duongbay values
 ('VCSPQC', 'VCS', 'PQC', 400), 
 ('PQCVCS', 'PQC', 'VCS', 400);
  
-insert into khachhang values
-('0725356821', 'thi12', 'Mac Van Thi', 'vthi', '1993-08-24'),
-('0976262341', 'vuong12', 'Pham Nhat Vuong', 'nhatvuong','2022-02-14'),
-('0911222333', 'guest_nam', 'Tran Thanh Nam', 'nam.tran@gmail.com', '1995-01-01'),
-('0922333444', 'guest_nu', 'Nguyen Thi My Nu', 'mynu99@yahoo.com', '1999-05-20'),
-('0933444555', 'guest_rich', 'Pham Vang Bac', 'richkid@icloud.com', '1985-12-12'),
-('0944555666', 'guest_student', 'Le Van Hieu Hoc', 'hieuhoc@edu.vn', '2004-09-05');
+
 
 
 insert into maybay values
@@ -169,11 +163,7 @@ insert into maybay values
 
 
 
-insert into nhanvien values
-('0000000000', 'Le Thi A', 'ta', 1200),
-('0912836521', 'Le Van A', 'levana', 1000),
-('0999888777', 'Quan Tri Vien', 'admin_main', 2000),
-('0988777666', 'Nhan Vien Quay', 'staff_checkin', 1000);
+
 
 insert into sanbay values
 ('DAD','DA NANG', 'Da Nang'),
@@ -194,8 +184,21 @@ insert into sanbay values
 ('VCA', 'CAN THO', 'Can Tho'),
 ('VKG', 'RACH GIA', 'Kien Giang');
 
+insert into khachhang values
+('0725356821', 'thi12', 'Mac Van Thi', 'vthi', '1993-08-24'),
+('0976262341', 'vuong12', 'Pham Nhat Vuong', 'nhatvuong','2022-02-14'),
+('0911222333', 'guest_nam', 'Tran Thanh Nam', 'nam.tran@gmail.com', '1995-01-01'),
+('0922333444', 'guest_nu', 'Nguyen Thi My Nu', 'mynu99@yahoo.com', '1999-05-20'),
+('0933444555', 'guest_rich', 'Pham Vang Bac', 'richkid@icloud.com', '1985-12-12'),
+('0944555666', 'guest_student', 'Le Van Hieu Hoc', 'hieuhoc@edu.vn', '2004-09-05');
+
+insert into nhanvien values
+('0000000000', 'Le Thi A', 'ta', 1200),
+('0912836521', 'Le Van A', 'levana', 1000),
+('0999888777', 'Quan Tri Vien', 'staff_main', 2000),
+('0988777666', 'Nhan Vien Quay', 'staff_checkin', 1000);
+
 insert into taikhoan values
-('antiem', '12', 'guest'),
 ('levana', '0912836521', 'staff'),
 ('ta', '0000000000', 'staff'),
 ('thi12', '12', 'guest'),
@@ -205,8 +208,9 @@ insert into taikhoan values
 ('guest_nu', '123', 'guest'),
 ('guest_rich', '123', 'guest'), 
 ('guest_student', '123', 'guest'),
-('admin_main', 'admin', 'admin'), 
-('staff_checkin', '123', 'staff');
+('staff_main', '0999888777', 'staff'), 
+('staff_checkin', '0988777666', 'staff');
+
 
 INSERT INTO ve (mcb, tenhanhkhach, sdt, soghe) VALUES 
 ('HAN-SGN-001', 'Le Van Khu', '0912345678', 10), 

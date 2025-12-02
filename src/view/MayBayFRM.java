@@ -257,11 +257,12 @@ public class MayBayFRM extends JFrame {
                     if (Character.isDigit(txtSoGhe.getText().charAt(i))) {
                         continue;
                     } else {
-                        baoLoi.setText("thông tin đường bay không hợp lệ!");
+                        baoLoi.setText("thông tin máy bay không hợp lệ!");
                         return;
                     }
 
                 }
+                
                 txtSHMB.setText(txtSHMB.getText().toUpperCase());
                 if (txtSHMB.getText().equals("") || txtHangMB.getText().equals("") || txtSoGhe.getText().equals("")) {
                     baoLoi.setText("Vui lòng nhập đầy đủ thông tin đường bay!");
