@@ -58,6 +58,13 @@ public class QuanLyFRM extends JFrame {
 
         add(lblTitle, BorderLayout.NORTH);
         add(panelMain, BorderLayout.CENTER);
+        
+        if(controller.Controller.tk.getLoaiTaiKhoan().equals("staff")){
+            btnNhanVien.setEnabled(false);
+            btnDuongBay.setEnabled(false);
+            btnSanBay.setEnabled(false);
+            btnMayBay.setEnabled(false);
+        }
 
         // === Xử lý sự kiện ===
         btnThoat.addActionListener(e -> {
